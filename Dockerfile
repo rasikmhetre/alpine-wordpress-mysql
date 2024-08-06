@@ -1,7 +1,5 @@
 FROM alpine:latest
 
-MAINTAINER rasikmhetre@gmail.com
-
 RUN apk update && apk add apache2 php7-apache2 php7-gd php7-mysqli php
 
 COPY httpd.conf /etc/apache2/httpd.conf
